@@ -1,0 +1,32 @@
+{
+  "domain": "STEM / Chemistry",
+  "hidden_system": "isothermal constant-volume batch reactor, single species A",
+  "observable": "half-life t_half(c0) in seconds, quoted to 4 significant figures",
+  "rate_law": "-d[A]/dt = k0 + k1*[A] + k2*[A]**2",
+  "polynomial_degree": 2,
+  "answer": {
+    "k0": 3.7e-08,
+    "k1": 0.0215,
+    "k2": 0.48
+  },
+  "units": {
+    "k0": "mol/(L*s)",
+    "k1": "1/s",
+    "k2": "L/(mol*s)"
+  },
+  "tolerance_relative": 0.01,
+  "higher_order_coefficients_must_be_zero": true,
+  "query_budget": 6,
+  "input_domain_mol_per_L": [
+    1e-09,
+    1000.0
+  ],
+  "derived": {
+    "crossover_zero_to_first_order": 1.7209302325581395e-06,
+    "crossover_first_to_second_order": 0.04479166666666667,
+    "discriminant_k1sq_minus_4k0k2": 0.000462179,
+    "plateau_illusion_ln2_over_k1_s": 32.23936834042362,
+    "true_peak_c0": 0.0003926,
+    "true_peak_t_half_s": 31.8368
+  }
+}
